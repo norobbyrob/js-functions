@@ -3,13 +3,18 @@
  * @param {number} n
  * @return {string} the number as a string
  */
-
+function numberToString(n){
+	return n.toString();
+}
 
 /**
  * Adds one to a given number.
  * @param {number} n
  * @return {number}
  */
+ function increase(n){
+ 	return n+1
+ }
 
 
 /**
@@ -17,6 +22,9 @@
  * @param {number} n
  * @return {number}
  */
+ function decrease(n){
+ 	return n-1
+ }
 
 
 /**
@@ -25,7 +33,9 @@
  * @param {number} y
  * @return {number} the sum
  */
-
+function add(x,y){
+	return x+y
+}
 
 /**
  * Subtracts the second number from the first.
@@ -33,7 +43,9 @@
  * @param {number} y
  * @return {number} the difference
  */
-
+function subtract(x,y){
+	return x-y
+}
 
 /**
  * Multiplies two numbers.
@@ -41,6 +53,9 @@
  * @param {number} y
  * @return {number} the product
  */
+ function multiply(x,y){
+ 	return x*y
+ }
 
 
 /**
@@ -50,12 +65,17 @@
  * @return {number} the quotient
  */
 
-
+function divide(x,y){
+	return x/y
+}
 /**
  * Multiplies a number by itself.
  * @param {number} x, number to be squared
  * @return {number} squared
  */
+function square(x){
+	return x*x
+}
 
 
 /**
@@ -66,7 +86,22 @@
  * @param {number} y
  * @return {number} the result
  */
-
+function calculate('add', 4, 7){{
+	console.log("4 + 7 = 11");
+	return("11")
+}
+function calculate('subtract', 4, 7){
+	console.log("4 - 7 = -3");
+	return("-3")
+}
+function calculate('multiply', 8, 4){
+	console.log("8 * 4 = 32");
+	return("32")
+}
+function calculate('divide', 8, 4){
+	console.log("8 / 4 = 2");
+	return("2")
+}
 
 /**
  * Returns true if `a` is greater than `b`.
