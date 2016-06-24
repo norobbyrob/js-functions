@@ -156,6 +156,13 @@ function areEqual(a,b) {
  */
 
 function minimum(x,y){
+	if (x > y){
+		return y
+	}
+	else{
+	return x
+	}
+}
 	
 /**
  * Returns the largest value of two numbers.
@@ -164,13 +171,28 @@ function minimum(x,y){
  * @return {number} the largest number
  */
 
-
+function maximum(x,y){
+	if (x > y){
+		return x
+	}
+	else{
+		return y
+	}
+}
 /**
  * Returns true if `n` is even.
  * @param {number} n
  * @return {boolean} the number is even
  */
 
+function isEven(n){
+	if (n % 2 == 0){
+		return true
+	}
+	else{
+ 		return false
+	}
+}
 
 /**
  * Returns true if `n` is odd.
@@ -178,6 +200,14 @@ function minimum(x,y){
  * @return {boolean} the number is odd
  */
 
+function isOdd(n){
+	if (n % 2 == 0){
+		return false
+	}
+	else{
+ 		return true
+	}
+}
 
 /**
  * Returns a letter grade.
@@ -190,6 +220,24 @@ function minimum(x,y){
  * @param {number} total maximum possible score
  * @return {string} the score represented as a letter grade
  */
+function letterGrade(score, total_maximum_possible_score){
+	var percentage = (score / total_maximum_possible_score)
+	if(percentage >= .90 && percentage <= 1){
+		return 'A'
+	}
+	if(percentage >= .80 && percentage < .90){
+		return 'B'
+	}
+	if(percentage >= .70 && percentage < .80){
+		return 'C'
+	}
+	if(percentage >= .60 && percentage < .70){
+		return 'D'
+	}
+	if(percentage >= 0 && percentage < .60){
+		return 'F'
+	}
+}
 
 
 /**
@@ -200,7 +248,7 @@ function minimum(x,y){
  * @return {object} restaurant
  */
 
-
+	
 /**
  * Joins two strings with a space.
  * @param {string} word1
